@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/shape_bckground"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dp"
+        android:background="@drawable/shape_bckground"
+        >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="45.0dp"
+            android:layout_height="45.0dp"
+            android:src="@drawable/goback" />
+
+       
+
+        <TextView
+            android:id="@+id/title_cityname"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="当前城市：北京"
+            android:textColor="#FFFFFF"
+            android:textSize="25.0sp" >
+        </TextView>
+    </RelativeLayout>
+
+  
+        <Spinner
+        android:id="@+id/spro"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Spinner
+        android:id="@+id/scity"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Spinner
+        android:id="@+id/sarea"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+        
+        
+   
+
+</LinearLayout>

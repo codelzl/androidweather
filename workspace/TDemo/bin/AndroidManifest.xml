@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 访问网络的权限 -->  
+	<uses-permission android:name="android.permission.INTERNET" />  
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.tdemo.LoginActivity"
+           
+            android:label="登录首页" >
+           
+            
+        </activity>
+        
+            <activity
+            android:name="com.example.tdemo.MainActivity"
+           
+            android:label="@string/app_name" >
+         </activity>
+         
+         <activity
+            android:name="com.example.tdemo.RegistActivity"
+           
+            android:label="注册" >
+         </activity>
+         
+        <activity
+            android:name="com.example.tdemo.ChatActivity"
+           
+            android:label="chat" >
+            
+            
+            
+         </activity>
+         
+          <activity
+            android:name="com.example.tdemo.ChatothersActivity"
+           
+            android:label="聊天主界面" >
+         </activity>
+         
+      <service android:name="com.example.tdemo.MyService">  
+                <intent-filter>  
+                    <action android:name="com.example.tdemo.MyService"/>  
+                </intent-filter>              
+    </service>  
+    
+       <activity
+            android:name="com.example.tdemo.SaveActivity"
+           
+            android:label="chat" >
+            
+            
+            
+         </activity>
+         <activity
+            android:name="com.example.tdemo.ContactActivity"
+           
+            android:label="chat" >
+           
+            
+         </activity>
+         
+         
+              <activity
+            android:name="com.example.tdemo.AsyncActivity"
+           
+            android:label="chat" >
+            
+              </activity>
+            
+                  
+              <activity
+            android:name="com.example.tdemo.LeftFragment"
+           
+            android:label="chat" >
+            
+           
+            
+         </activity>
+         
+              <activity
+            android:name="com.example.tdemo.RightFragment"
+           
+            android:label="chat" >
+            
+          </activity>
+             <activity
+            android:name="com.example.tdemo.RightFragmentB"
+           
+            android:label="chat" >
+            
+          </activity>
+         
+        
+       
+         
+                 <activity
+            android:name="com.example.tdemo.FragmentActivityty"
+           
+            android:label="chat" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+         </activity>
+        
+         
+         
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello !</string>
+    <string name="chat_time">16.09</string>
+    <string name="my_Logo">头像</string>
+</resources>

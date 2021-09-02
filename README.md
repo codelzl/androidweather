@@ -112,7 +112,7 @@ MEMEORY表 备忘录表 存放备忘录内容 时间
   我们要实现的日历控件采用ViewPager作为主框架，CalendarView继承ViewPager，这样就天生拥有左右滑动和缓存的功能。目前我们设定日历左右滑动为月份切换的操作，每一个月份显示通过自定义ViewGroup实现，也就是我们的MonthView，月份中的日期是通过layout布局解析出的View，根据月份的不同每个MonthView可能包含6 x 7或5 x 7个日期View，由于给ViewPager绑定数据需要通过PagerAdapter，所以继承PagerAdapter我们扩展了一个CalendarPagerAdapter，来完成MonthView的相关初始化和日期数据的绑定。每个MonthView的日期数据应该由上个月的后0~6天、当前月的天数和下个月的前0~6天组成。首先计算出当前月有多少天，这个简单，以及根据年月算出当前月的第一天是星期几：返回0代表周日，1~6代表周一到周六，总页数应由日历的起始年月得到，其实就是确定ViewPager的总页数MonthView继承ViewGroup，也就是日历的每一页，接收到日期数据后，在MonthView中根据数据构造对应的日期View，然后添加View到MonthView中，最后通过onMeasure、onLayout确定每个View最终大小和位置。
 5.1 章   软 件 测 试
 5.1.1 测试目的
- (1) 确认软件的质量，确保软件能正常运行，并且达到了期待中的效果 
+ (1) 确认软件的质量，确保软件能正常运行，并且3达到了期待中的效果 
 (2) 确认信息的正确性。确保从网上下载的天气情况与实际的天气情况没有什么差别 
 
 
